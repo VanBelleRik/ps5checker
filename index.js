@@ -13,9 +13,11 @@ let canOrder = false;
         console.log('Product Page Loaded...')
         await page.click('button[name=accept_cookie]');
         console.log('Cookies Accepted...');
-        await page.screenshot({path: 'screenshots/cookies-accepted.png'});
         while(!canOrder) {
             await sleep(3000);
+            await page.goto(productPage);
+            console.log('Product Page Loaded...')
+            await page.screenshot({path: 'screenshots/cookies-accepted.png'});
             let addToCartButton = await page.$('.js-add-to-cart-button');
             if(addToCartButton){
                 notifier.notify('test');
