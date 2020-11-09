@@ -1,0 +1,16 @@
+{
+  "name": "ps5checker",
+  "version": "1.0.0",
+  "description": "PS5 Checker for Coolblue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rik Van Belle",
+  "license": "ISC",
+  "dependencies": {
+    "node-notifier": "^8.0.0",
+    "open": "^7.3.0",
+    "puppeteer": "^5.4.1"
+  }
+}
